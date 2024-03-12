@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000; 
+    color: #fff; /* Set font color to white */
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background: #333; /* Slightly lighter shade for the about section for contrast */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1); /* Adjusted shadow color for visibility */
+}
+
+.about-section h1, .about-section h2 {
+    text-align: center;
+    color: #fff; /* Ensure headers are also white */
+}
+
+/* If you're using buttons or other elements, ensure their styles are also adjusted for the dark theme */
+#learnMoreBtn {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto; /* Center the button */
+    background: #555; /* Darker background for the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#learnMoreBtn:hover {
+    background: #777; /* Lighter background on hover */
+}
