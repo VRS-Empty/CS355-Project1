@@ -48,47 +48,48 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #0050a1;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
+    background-color: white;
+    font-size: 30px;
     align-items: center;
-}
-
-.nav {
+    
+  }
+  
+  .Logo{
+    margin-right: auto;
+    
+  }
+  
+  .LogIn-SignUp {
+    margin-left: auto;
+  }
+  
+  
+  nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:all 1.1s;
+    
+  }
+  
+  nav ul li a:hover{
+    background-color:black;
+    scale:1.1;
+   
+  }
+  /*Positioning and coloring of Sticky Nav Bar*/
+  .nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
   }
   .nav a.current,
   .nav a:hover {
-    color: black;
+    color: white;
     font-weight: bold;
   }
-
-
-  nav ul li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.Logo{
-    margin-right: auto;
-}
-
-.LogIn-SignUp {
-    margin-left: auto;
-}
-
-nav ul li a:hover{
-    background-color:dodgerblue;
-}
-
-.logo-img {
-    height: 50px;
-    width: auto;
-}
