@@ -1,0 +1,69 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0050a1;
+    font-size: 35px;
+    align-items: center;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav a.current,
+  .nav a:hover {
+    color: black;
+    font-weight: bold;
+  }
+
+
+  nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Logo{
+    margin-right: auto;
+}
+
+.LogIn-SignUp {
+    margin-left: auto;
+}
+
+nav ul li a:hover{
+    background-color:dodgerblue;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.background {
+width: 100%; 
+height: auto; 
+background-size: cover; 
+background-position: center;
+}
+
+h2{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    font-size: xx-large;
+}
+

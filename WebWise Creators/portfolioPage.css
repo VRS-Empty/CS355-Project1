@@ -1,0 +1,209 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  header{
+    height:31px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0050a1;
+    font-size: 30px;
+    align-items: center;
+    
+  }
+  
+  .Logo{
+    margin-right: auto;
+    
+  }
+  
+  .LogIn-SignUp {
+    margin-left: auto;
+  }
+  
+  
+  nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:all 1.1s;
+    
+  }
+  
+  nav ul li a:hover{
+    background-color:dodgerblue;
+    scale:1.1;
+   
+  }
+  /*Positioning and coloring of Sticky Nav Bar*/
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+  .nav a.current,
+  .nav a:hover {
+    color: black;
+    font-weight: bold;
+  }
+  /*Implemented from Udemy Sliding Card Project*/
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+  background-image: url(Background.jpg);
+  padding-bottom: 100%;
+}
+#divhead{
+  display: flex;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+}
+#head{
+  display:flex;
+  justify-content: center;
+  
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: darkblue;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+  
+}
+
+.panel h3 {
+  font-size: 32px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+  /* Button used to open the chat form - fixed at the bottom right of the page */
+  .open-button{
+    background-color: #0050A1;
+    color:#000000;
+    padding:16px 20px;
+    border-radius: 8px;
+    border:3px solid black;
+    cursor:pointer;
+    opacity:0.8;
+    position: fixed;
+    bottom:23px;
+    right:28px;
+    width:280px;
+    transition:1.5s;
+  }
+  
+  /* The popup chat that is hidden by default */
+  .chat-popup{
+    display:none;
+    position: fixed;
+    bottom:0;
+    right:15px;
+    z-index:5;
+    
+  }
+  
+  /* Adds styles to the form container */
+  .form-container{
+    max-width:300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  /* Enables full-width textarea */
+  .form-container textarea{
+    width:100%;
+    margin:5px 0 22px 0;
+    border:none;
+    background: #f1f1f1;
+    border-radius: 8px;
+    resize:none;
+    min-height:200px;
+  }
+  
+  .form-container textarea:focus{
+    background-color:#e6e6e6;
+    outline:none;
+  }
+  /* Set a style for the submit/send button */
+  .form-container .btn{
+    background-color: #04aa6d;
+    color:white;
+    padding:16px 20px;
+    border-radius: 8px;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+
+  }
+  .form-container .cancel{
+    background-color: red;
+  }
+  
+  /* Adds hover effects to all the buttons */
+  .form-container .btn:hover, .open-button:hover{
+    opacity:1;
+    transform: scale(1.1);
+    background-color:dodgerblue;
+  }

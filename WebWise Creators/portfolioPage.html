@@ -1,0 +1,65 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webwise Products</title>
+  <link rel="stylesheet" href="portfolioPage.css">
+
+
+</head>
+
+<body>
+  <script src="portfolioPage.js" defer></script>
+  <header>
+    <nav class="nav">
+      <div class="nav-container">
+        <ul>
+          <li class="Logo"><a href="homePage.html"><img src="https://raw.githubusercontent.com/VRS-Empty/CS355-Project1/main/WebWise%20Creators/Logo.png" alt="Logo" style="height: 50px;"></a>
+          </li>
+          <li><a href="homePage.html">Home</a></li>
+          <li><a href="productPage.html">Product</a></li>
+          <li><a href="portfolioPage.html">Portfolio</a></li>
+          <li><a href="aboutUs.html">About us</a></li>
+          <li class="LogIn-SignUp"><a href="#LogIn-SignUp">Log in/Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="header">
+    <h1 id="head">Curious about how our Past Websites turned out?<br> Take a look!</h1>
+    <div class="container">
+
+      <div class="panel active" style="background-image: url('portfolio1.PNG')">
+        <h3>ETQ Amsterdam</h3>
+      </div>
+      <div class="panel" style="background-image: url('portfolio2.PNG')">
+        <h3>Desk Pass</h3>
+      </div>
+      <div class="panel" style="background-image: url('portfolio3.PNG')">
+        <h3>Impossible Bureau</h3>
+      </div>
+      <div class="panel" id="panel4" style="background-image: url('portfolio4.PNG')">
+        <h3>Stripe</h3>
+      </div>
+      <div class="panel" id="panel5" style="background-image: url('portfolio5.PNG')">
+        <h3>DoneDone</h3>
+      </div>
+
+    </div>
+  </div>
+  <!--Chat support in the bottom right corner-->
+  <button class="open-button" onclick="openForm()"><strong>Chat</strong></button>
+
+  <div class="chat-popup" id="myForm">
+    <form class="form-container" action="#">
+      <h1 style="color:#0050A1;">Chat</h1>
+
+      <label for="msg">Enter your message below!</label>
+      <textarea placeholder="Type your message..." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel/Close</button>
+    </form>
+  </div>
+</body>

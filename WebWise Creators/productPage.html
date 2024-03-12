@@ -1,0 +1,173 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webwise Products</title>
+    <link rel="stylesheet" href="productStyleSheet.css">
+
+
+</head>
+
+<body>
+    
+        
+        <script src="productJS.js"></script>
+        <header>
+        <nav class = "nav">
+            <div class = "nav-container">
+            <ul>
+                <li class="Logo"><a href="homePage.html"><img src="https://raw.githubusercontent.com/VRS-Empty/CS355-Project1/main/WebWise%20Creators/Logo.png" alt="Logo" style="height: 50px;"></a>
+                </li>
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="productPage.html">Product</a></li>
+                <li><a href="portfolioPage.html">Portfolio</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li class="LogIn-SignUp"><a href="#LogIn-SignUp">Log in/Sign up</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <!-- Table with 3 Radio Buttons and all plan info
+         with Purchase submit button-->
+
+    <div class="table-container">
+        <form id="radioForm" action="/action_page.php">
+            <table class="planTable">
+
+                <tr>
+                    <th></th>
+                    <th scope="col"><input type="radio" name="plan" id="plan1">Plan 1</th>
+                    <th scope="col"><input type="radio" name="plan" id="plan2">Plan 2</th>
+                    <th scope="col"><input type="radio" name="plan" id="plan3">Plan 3</th>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td class=cost><strong>$20</strong></td>
+                    <td class=cost><strong>$75</strong></td>
+                    <td class=cost><strong>$250</strong></td>
+
+                </tr>
+                <tr>
+
+                    <th scope="row" class="tooltip">Up to 5 Pages <span class="tooltiptext">Ideal for small websites
+                            with limited content</span></th>
+
+
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">Mobile-friendly design <span class="tooltiptext">Ensures your
+                            website looks great and functions smoothly on all devices (phones, tablets, desktops)</span>
+                    </th>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">Basic contact form <span class="tooltiptext">Allows visitors to
+                            easily contact you through a simple form on your website</span></th>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+
+                <tr>
+                    <th scope="row" class="tooltip">Stock photo intergration <span class="tooltiptext">Access to a
+                            library of high-quality images to enhance your website's visual appeal</span></th>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+                <!-- Plan 2 -->
+                <tr>
+                    <th scope="row" class="tooltip">Up to 10 pages <span class="tooltiptext">Provides room for websites
+                            with a moderate amount of content</span></th>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">SEO optimization <span class="tooltiptext">Increase organic traffic
+                            by making your website more discoverable</span></th>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">Social media integration <span class="tooltiptext">Connect your
+                            website to your social media profiles for easy sharing and engagement</span></th>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                    <td> &#9989</td>
+                </tr>
+
+                <!--Plan 3-->
+                <tr>
+                    <th scope="row" class="tooltip">Custom contact form <span class="tooltiptext">Design a personalized
+                            contact form tailored to your specific needs</span></th>
+                    <td> &#10060</td>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">Unlimited Pages <span class="tooltiptext">Perfect for websites with
+                            extensive content or those expecting significant growth</span></th>
+                    <td> &#10060</td>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">Content managment system(CMS) <span
+                            class="tooltiptext">User-friendly interface to easily edit, update, and manage your website
+                            content without needing coding knowledge</span></th>
+                    <td> &#10060</td>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">E-commerce functionality <span class="tooltiptext">Transform your
+                            website into an online store to sell products or services directly to customers</span></th>
+                    <td> &#10060</td>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="tooltip">Advanced analytics and reporting <span class="tooltiptext">Gain
+                            valuable insights into website traffic, user behavior, and marketing campaigns</span></th>
+                    <td> &#10060</td>
+                    <td> &#10060</td>
+                    <td> &#9989</td>
+                </tr>
+
+            </table>
+            <input type="submit" value="Purchase" id="buyBtn">
+        </form>
+
+
+
+
+    </div>
+
+    <!--Chat support in the bottom right corner-->
+    <button class="open-button" onclick="openForm()"><strong>Chat</strong></button>
+
+    <div class="chat-popup" id="myForm">
+        <form class="form-container" action="#">
+            <h1 style="color:#0050A1;">Chat</h1>
+
+            <label for="msg">Enter your message below!</label>
+            <textarea placeholder="Type your message..." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel/Close</button>
+        </form>
+    </div>
+    
+</body>
+<footer>
+
+</footer>
