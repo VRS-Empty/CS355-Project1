@@ -1,3 +1,4 @@
+//Name- Galib Muktasin, Jeffrey Li, Daniel Liu, Floyd Brown
 
 document.getElementById('learnMoreBtn').addEventListener('click', function() {
     var moreInfo = document.getElementById('moreInfo');
